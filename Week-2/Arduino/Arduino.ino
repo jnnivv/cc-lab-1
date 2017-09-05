@@ -36,8 +36,8 @@ int ledState = 0;            // var for storing led
 int lastButtonState = 0;     // var for storing the button state in the previous loop
 long debounceTimer = 0;      // var holding a timer after the last button state change
 
-float pulse = 0;
-float pulseMod = .01;
+float pulse = 0;             // stores button brightness for pulsing (PWM)
+float pulseMod = .01;        // modifies brightness each loop iteration
 
 void setup() {
   // initialize the LED pin as an output:
@@ -67,15 +67,18 @@ void loop() {
     }
   }
   
+  // apply state to led
   digitalWrite(ledPin, ledState);
   
   // optional: strobe blink
-  
+  /*
+  // use modulo function (google it!) as a switch for blinking
   if( millis() % 100 > 50 ) {
     digitalWrite(ledPin, ledState);
   } else {
     digitalWrite(ledPin, 0);
   }
+  */
   
   // save button state for next iteration
   lastButtonState = buttonState;
