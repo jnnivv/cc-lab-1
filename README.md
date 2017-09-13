@@ -4,4 +4,5 @@ This is where I'm sharing my homework for the class *Creativity and Computation 
 
 ## Homework
 
-- [Week 2](Week-2/README.md)
+- [Week 2](WeekTwo/README.md)
+- [Week 3](WeekThree/README.md)
