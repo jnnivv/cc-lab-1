@@ -6,3 +6,4 @@ This is where I'm sharing my homework for the class *Creativity and Computation 
 
 - [Week 2](WeekTwo/README.md)
 - [Week 3](WeekThree/README.md)
+- [Week 4](WeekFour/README.md)
