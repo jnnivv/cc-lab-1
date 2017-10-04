@@ -1,4 +1,4 @@
-# Week Three
+# Week Five
 
 Today we're going to build a music note teacher. The device will play different notes for you to memorize and includes a quiz mode where you have to identify notes by ear.
 
@@ -26,6 +26,8 @@ The other parts of the setup don't need much explanation, since we've used the c
 
 ## Code 
 The code builds on previous examples, too. The `loop()` function starts with push button debouncing code and a snippet for reading the potentiometer.
+
+[Click here for the full code.](WeekFive.ino)
 
 The interesting part is the following:
 
