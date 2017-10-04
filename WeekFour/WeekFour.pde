@@ -9,8 +9,8 @@ int hiddenY;
 void setup() {
   size(600, 600);
   // Prints out the available serial ports.
-  // println(Arduino.list());
-  arduino = new Arduino(this, Arduino.list()[7], 57600);
+  println(Arduino.list());
+  arduino = new Arduino(this, Arduino.list()[3], 57600);
   
   hiddenX = (int) random(0, width);
   hiddenY = (int) random(0, height);
@@ -26,8 +26,8 @@ void draw() {
     hiddenY = (int) random(0, height);
   }
   
-  arduino.digitalWrite(3, 1);
+  arduino.digitalWrite(8, 1);
   delay(distance);
-  arduino.digitalWrite(3, 0);
+  arduino.digitalWrite(8, 0);
   delay(distance);
 }
